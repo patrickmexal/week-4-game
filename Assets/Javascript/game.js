@@ -6,11 +6,18 @@ var gemTwo = Math.floor(Math.random() * 12 + 1);
 var gemThree = Math.floor(Math.random() * 12 + 1);
 var gemFour = Math.floor(Math.random() * 12 + 1);
 var initialScore = 0;
-var totalScore;
+var totalScore = 0;
 
 document.getElementById("randomnumber").innerHTML = initialTarget;
+document.getElementById("totalscore").innerHTML = totalScore;
 
-//totalScore = initialScore + 
+function redUp() {
+	initialScore + gemOne;
+	return totalScore;
+}
+document.getElementById("red").addEventListener("click", redUp);
+
+// totalScore = initialScore + []
 
 
 
