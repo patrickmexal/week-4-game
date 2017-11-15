@@ -54,8 +54,9 @@ img {
 }
 #footer {
 	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/93/7f/97/937f9725334a66d4bcfb544a6c0f7e75.jpg");
+	float: right;
 	clear: both;
-	width: 1200px;
+	max-width: 900px;
 	text-align: center;
 	border-style:  solid;
 	border-radius: 10px;
