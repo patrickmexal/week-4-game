@@ -19,6 +19,9 @@ body {
 	padding: 10px;
 	color: lightgrey;
 }
+.col-md-3 {
+	display: inline-block;
+}
 img {
 	position: relative;
 	z-index: -100;

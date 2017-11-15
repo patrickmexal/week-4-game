@@ -1,4 +1,4 @@
-
+ // Global Variables //
 
 var initialTarget = Math.floor(Math.random() * 100 + 20);
 var gemOne = Math.floor(Math.random() * 12 + 1);
@@ -16,6 +16,11 @@ function redUp() {
 	return totalScore;
 }
 document.getElementById("red").addEventListener("click", redUp);
+
+redUp();
+ /*$("#red").on("click", function() {
+	$(initialScore + gemOne).text;
+}); */
 
 // totalScore = initialScore + []
 

@@ -3,12 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>The Crystal Collector</title>
+	<!-- Bootstrap -->
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="Assets/CSS/style.css">
+	<!-- Google Font -->
 	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery.js"></script>
 </head>
 <body>
-	<div class="container"> <!-- Page Wrapper -->
+	<!-- Page Wrapper -->
+	<div class="container"> 
 		<div class="jumbotron text-center">
 			<h1>The Crystal Collector</h1>
 		</div>
@@ -37,16 +43,16 @@
 		</div>
 		<div class="row">
 			<div id="red" class="col-md-3" "gems">
-				<img src="Assets/Images/5-Star_Crystal.png" onclick="redUp()">
+				<input type="image" src="Assets/Images/5-Star_Crystal.png" onclick="redUp()"/>
 			</div>
 			<div id="oilslick" class="col-md-3" "gems">
-				<img src="Assets/Images/titanium-quartz.png">
+				<input type="image" src="Assets/Images/titanium-quartz.png"/>
 			</div>
 			<div id="orange" class="col-md-3" "gems">
-				<img src="Assets/Images/orangecrystal.png">
+				<input type="image" src="Assets/Images/orangecrystal.png"/>
 			</div>
 			<div id="blue" class="col-md-3" "gems">
-				<img src="Assets/Images/crystal_major_event.png">
+				<input type="image" src="Assets/Images/crystal_major_event.png"/>
 			</div>
 		</div>
 		<div class="row">
@@ -60,10 +66,6 @@
 		</div>
 	</div>
 	<script src="Assets/Javascript/game.js"> 
-		<script
-  		src="https://code.jquery.com/jquery-3.2.1.min.js"
-  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  		crossorigin="anonymous"></script>
 	</script>
 </body>
 </html>
