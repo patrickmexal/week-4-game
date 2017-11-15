@@ -6,12 +6,15 @@ body {
 }
 .jumbotron {
 	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/93/7f/97/937f9725334a66d4bcfb544a6c0f7e75.jpg");
+	background-size: 1200px 400px;
 	color: white;
 	font-family: Norse;
 	font-size: 200px;
 	font-weight: bolder;
+	border-style: ridge;
 }
 #instructions {
+	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/93/7f/97/937f9725334a66d4bcfb544a6c0f7e75.jpg");
 	font-family: Cinzel;
 	font-weight: bold;
 	border-style: solid;
@@ -21,6 +24,9 @@ body {
 }
 .col-md-3 {
 	display: inline-block;
+}
+.col-md-6 {
+	color: white;
 }
 img {
 	position: relative;
