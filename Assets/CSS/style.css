@@ -51,15 +51,5 @@ img {
 
 #totalscore {
     font-size: 50px;
-}
-#footer {
-	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/93/7f/97/937f9725334a66d4bcfb544a6c0f7e75.jpg");
-	float: right;
-	clear: both;
-	max-width: 900px;
-	text-align: center;
-	border-style:  solid;
-	border-radius: 10px;
-	margin-bottom: 20px;
-	padding: 10px;
+    padding-bottom: 20px;
 }
