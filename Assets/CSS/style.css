@@ -8,7 +8,7 @@ body {
 	background-image: url("https://s-media-cache-ak0.pinimg.com/originals/93/7f/97/937f9725334a66d4bcfb544a6c0f7e75.jpg");
 	background-size: 1200px 400px;
 	color: white;
-	font-family: Norse;
+	font-family: Norse, "Libre Barcode 39 Text", "Julius Sans One", "Poiret One"
 	font-size: 200px;
 	font-weight: bolder;
 	border-style: ridge;
