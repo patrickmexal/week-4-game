@@ -13,17 +13,23 @@ document.getElementById("totalscore").innerHTML = totalScore;
 
 function redUp() {
 	initialScore + gemOne;
-	return totalScore;
 }
 document.getElementById("red").addEventListener("click", redUp);
 
-redUp();
- /*$("#red").on("click", function() {
+redUp()
+
+var totalScore = document.getElementById("totalscore").innerHTML
+
+ $("#red").on("click", function() {
 	$(initialScore + gemOne).text;
+}) 
+
+
+
+
+/* $("#red").click(redUp() {
+	return redUp;
 }); */
-
-// totalScore = initialScore + []
-
 
 
 
