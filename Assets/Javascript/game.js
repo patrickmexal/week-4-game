@@ -25,20 +25,14 @@ function redUp() {
 	totalScore = totalScore + gemOne;
 	
 }
-//redUp();
-
 
 function oilSlickUp() {
 	totalScore = totalScore + gemTwo;
 }
 
-//oilSlickUp();
-
 function orangeUp() {
 	totalScore = totalScore + gemThree;
 }
-
-//orangeUp();
 
 function blueUp() {
 	totalScore = totalScore + gemFour;
@@ -47,7 +41,7 @@ function blueUp() {
 
 
 
-
+//JQuery Operation
 
 $("#red").on("click", function(){
 	redUp()
@@ -68,14 +62,16 @@ $("#blue").on("click", function() {
 	blueUp()
 	$("#totalscore").html(totalScore)
 });
-console.log(totalScore, gemOne);
+
 
 //Score Board 
 if (totalScore === initialTarget) {
-	 (totalWins++);
+	 (totalWins++)
+	 $("#winTotal").html(totalWins)
 }
  
 else if (totalScore > initialTarget) {
+	alert("You Lose!")
 	(totalLosses++);
 }
 
