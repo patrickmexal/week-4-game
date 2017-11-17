@@ -18,52 +18,66 @@ $("#randomnumber").html(initialTarget);
 
 // Sets Total Score to zero
 $("#totalscore").html(totalScore);
-	console.log(totalScore);
+	
 
 
 function redUp() {
 	totalScore = totalScore + gemOne;
+	
 }
+//redUp();
+
 
 function oilSlickUp() {
 	totalScore = totalScore + gemTwo;
 }
 
+//oilSlickUp();
+
 function orangeUp() {
 	totalScore = totalScore + gemThree;
 }
+
+//orangeUp();
 
 function blueUp() {
 	totalScore = totalScore + gemFour;
 }
 
 
-$("#totalScore").html(redUp());
+
+
 
 
 $("#red").on("click", function(){
+	redUp()
 	$("#totalscore").html(totalScore)
 });
 
 $("#oilslick").on("click", function(){
+	oilSlickUp()
 	$("#totalscore").html(totalScore)
 });
 
 $("#orange").on("click", function() {
+	orangeUp()
 	$("#totalscore").html(totalScore)
 });
 
 $("#blue").on("click", function() {
+	blueUp()
 	$("#totalscore").html(totalScore)
 });
+console.log(totalScore, gemOne);
+
 //Score Board 
-/*if (totalScore === initialTarget) {
+if (totalScore === initialTarget) {
 	 (totalWins++);
 }
  
-else (totalScore > initialTarget) {
-	(totalLosses--);
-}*/
+else if (totalScore > initialTarget) {
+	(totalLosses++);
+}
 
 
 
