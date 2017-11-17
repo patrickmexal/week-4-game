@@ -7,29 +7,71 @@ var gemThree = Math.floor(Math.random() * 12 + 1);
 var gemFour = Math.floor(Math.random() * 12 + 1);
 var initialScore = 0;
 var totalScore = 0;
+var totalWins = 0;
+var totalLosses = 0;
 
-document.getElementById("randomnumber").innerHTML = initialTarget;
-document.getElementById("totalscore").innerHTML = totalScore;
+ 
+
+
+// Sets initial random number target
+$("#randomnumber").html(initialTarget);
+
+// Sets Total Score to zero
+$("#totalscore").html(totalScore);
+	console.log(totalScore);
+
 
 function redUp() {
-	initialScore + gemOne;
+	totalScore = totalScore + gemOne;
 }
-document.getElementById("red").addEventListener("click", redUp);
 
-redUp()
+function oilSlickUp() {
+	totalScore = totalScore + gemTwo;
+}
 
-var totalScore = document.getElementById("totalscore").innerHTML
+function orangeUp() {
+	totalScore = totalScore + gemThree;
+}
 
- $("#red").on("click", function() {
-	$(initialScore + gemOne).text;
-}) 
+function blueUp() {
+	totalScore = totalScore + gemFour;
+}
+
+
+$("#totalScore").html(redUp());
+
+
+$("#red").on("click", function(){
+	$("#totalscore").html(totalScore)
+});
+
+$("#oilslick").on("click", function(){
+	$("#totalscore").html(totalScore)
+});
+
+$("#orange").on("click", function() {
+	$("#totalscore").html(totalScore)
+});
+
+$("#blue").on("click", function() {
+	$("#totalscore").html(totalScore)
+});
+//Score Board 
+/*if (totalScore === initialTarget) {
+	 (totalWins++);
+}
+ 
+else (totalScore > initialTarget) {
+	(totalLosses--);
+}*/
 
 
 
 
-/* $("#red").click(redUp() {
-	return redUp;
-}); */
+
+//write totalLosses/Wins as an increment as 
+//shown in the 11/15 exercise Coin-Flip
+
 
 
 
