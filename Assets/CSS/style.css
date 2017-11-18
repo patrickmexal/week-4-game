@@ -53,3 +53,10 @@ img {
     font-size: 50px;
     padding-bottom: 20px;
 }
+#resetbutton {
+    float: right;
+    clear: both;
+    background-color: #600606;
+    width: 120px;
+    margin-right: 20px;
+}

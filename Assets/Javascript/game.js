@@ -22,8 +22,7 @@ $("#totalscore").html(totalScore);
 
 
 function redUp() {
-	totalScore = totalScore + gemOne;
-	
+	totalScore = totalScore + gemOne;	
 }
 
 function oilSlickUp() {
@@ -41,7 +40,7 @@ function blueUp() {
 
 
 
-//JQuery Operation
+//JQuery Operation- 
 
 $("#red").on("click", function(){
 	redUp()
@@ -63,24 +62,15 @@ $("#blue").on("click", function() {
 	$("#totalscore").html(totalScore)
 });
 
-
-//Score Board 
-if (totalScore === initialTarget) {
-	 (totalWins++)
-	 $("#winTotal").html(totalWins)
-}
- 
+//Score Board: Take Two
+if (totalScore == initialTarget) {
+	totalWins++;
+	$("#winTotal").html("totalWins");
+} 
 else if (totalScore > initialTarget) {
-	alert("You Lose!")
-	(totalLosses++);
+	totalLosses++;
+	$("#lossTotal").html("totalLosses");
 }
-
-
-
-
-
-//write totalLosses/Wins as an increment as 
-//shown in the 11/15 exercise Coin-Flip
 
 
 
