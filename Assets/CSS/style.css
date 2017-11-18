@@ -55,8 +55,8 @@ img {
 }
 #resetbutton {
     float: right;
-    clear: both;
+    clear: left;
     background-color: #600606;
     width: 120px;
-    margin-right: 20px;
+    margin-left: 50px;
 }
