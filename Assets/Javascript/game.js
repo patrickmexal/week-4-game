@@ -1,6 +1,6 @@
  // Global Variables //
 
-var initialTarget = Math.floor(Math.random() * 100 + 20);
+var initialTarget = Math.floor(Math.random() * 101)+ 19;
 var gemOne = Math.floor(Math.random() * 12 + 1);
 var gemTwo = Math.floor(Math.random() * 12 + 1);
 var gemThree = Math.floor(Math.random() * 12 + 1);
@@ -44,33 +44,42 @@ function blueUp() {
 
 $("#red").on("click", function(){
 	redUp()
+	gameOperation();
 	$("#totalscore").html(totalScore)
 });
 
 $("#oilslick").on("click", function(){
-	oilSlickUp()
+	oilSlickUp();
+	gameOperation();
 	$("#totalscore").html(totalScore)
 });
 
 $("#orange").on("click", function() {
-	orangeUp()
+	orangeUp();
+	gameOperation();
 	$("#totalscore").html(totalScore)
 });
 
 $("#blue").on("click", function() {
-	blueUp()
+	blueUp();
+	gameOperation();
 	$("#totalscore").html(totalScore)
 });
 
-//Score Board: Take Two
-if (totalScore == initialTarget) {
+//Score Board: Take Four... Still not working.
+function gameOperation() {
+
+if (totalScore === initialTarget) {
 	totalWins++;
-	$("#winTotal").html("totalWins");
+	$("#wintotal").html("Wins" + "" + totalWins)
 } 
 else if (totalScore > initialTarget) {
 	totalLosses++;
-	$("#lossTotal").html("totalLosses");
-}
+	$("#losstotal").html("Losses" + "" + totalLosses)
+}}
+
+
+
 
 
 
