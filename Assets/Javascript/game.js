@@ -71,10 +71,12 @@ function gameOperation() {
 
 if (totalScore === initialTarget) {
 	totalWins++;
+	totalScore = 0;
 	$("#wintotal").html("Wins:" + "" + totalWins);
 } 
 else if (totalScore > initialTarget) {
 	totalLosses++;
+	totalScore = 0;
 	$("#losstotal").html("Losses:" + "" + totalLosses);
 	$("document").reset();
 }}
