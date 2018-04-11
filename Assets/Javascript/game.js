@@ -78,7 +78,6 @@ else if (totalScore > initialTarget) {
 	totalLosses++;
 	totalScore = 0;
 	$("#losstotal").html("Losses:" + "" + totalLosses);
-	$("document").reset();
 }}
 
 
