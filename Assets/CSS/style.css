@@ -15,6 +15,7 @@ body {
     font-weight: bolder;
     border-style: ridge;
     margin-top: 20px;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 #instructions {
@@ -22,9 +23,10 @@ body {
     font-family: Cinzel;
     font-weight: bold;
     border-style: solid;
-    border-radius: 10px;
-    padding: 10px;
+    border-radius: 3px;
+    padding: 20px;
     color: lightgrey;
+    box-shadow: 0 8px 6px -6px black;
 }
 
 .col-md-3 {
@@ -60,3 +62,8 @@ img {
     width: 120px;
     margin-left: 50px;
 }
+
+/*#red, #oilslick, #orange, #blue {
+    width: 10%;
+    height: 10%;
+}*/

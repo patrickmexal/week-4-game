@@ -11,7 +11,10 @@ var totalWins = 0;
 var totalLosses = 0;
 
  
-
+function randomNumber() {
+initialTarget = Math.floor(Math.random() * 101) + 19;
+$("#randomnumber").html(initialTarget);
+}
 
 // Sets initial random number target
 $("#randomnumber").html(initialTarget);
@@ -69,16 +72,25 @@ $("#blue").on("click", function() {
 //Score Board: Take Four... Still not working.
 function gameOperation() {
 
-if (totalScore === initialTarget) {
-	totalWins++;
-	totalScore = 0;
-	$("#wintotal").html("Wins:" + "" + totalWins);
-} 
-else if (totalScore > initialTarget) {
-	totalLosses++;
-	totalScore = 0;
-	$("#losstotal").html("Losses:" + "" + totalLosses);
-}}
+	if (totalScore === initialTarget) {
+		totalWins++;
+		totalScore = 0;
+		randomNumber();
+		$("#wintotal").html("Wins:  " + "" + totalWins);
+	} else if (totalScore > initialTarget) {
+		totalLosses++;
+		totalScore = 0;
+		randomNumber();
+		$("#losstotal").html("Losses:  " + "" + totalLosses);
+		}
+}
+
+
+randomNumber();
+
+console.log(initialTarget);
+
+
 
 
 
